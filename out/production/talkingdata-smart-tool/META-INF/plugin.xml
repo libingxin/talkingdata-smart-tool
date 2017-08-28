@@ -1,0 +1,79 @@
+<idea-plugin version="2">
+  <id>com.talkingdata.smart.tool</id>
+  <name>TalkingData Smart Tool</name>
+  <version>1.0</version>
+  <vendor email="bingxin@tendcloud.com" url="http://www.talkingdata.com">TalkingData</vendor>
+
+  <description><![CDATA[
+TalkingData Smart Tool是一个方便程序员使用的工具箱，里面有一些小工具：
+<br>
+1. 通用唯一识别码uuid生成器
+<br>
+2. URL加密与解密
+<br>
+3. Unicode的编码和解码
+<br>
+4. 密码生成器
+<br>
+<br>
+
+TalkingData Smart Tool is a toolkit for programmers to use, there are some small tools:
+<br>
+1. UUID(Universally Unique Identifier) generator
+<br>
+2. URL encryption and decryption
+<br>
+3. Unicode encoding and decoding
+<br>
+4. Password generator
+<br>
+<br>
+Developer： 冰心
+<br>
+Email： bingxin.li@tendcloud.com
+<br>
+Blog： http://happyshome.cn
+<br>
+Company： https://www.talkingdata.com/
+    ]]></description>
+
+  <change-notes><![CDATA[
+V 1.0
+<br>
+1. UUID生成器，可以针对生成的结果转为大写或小写
+<br>
+2. 针对URL中的Query参数值进行URL的加密和解密
+<br>
+3. 对输入的字符串进行Unicode编码和解码
+<br>
+4. 根据选择的密码长度随机生成密码
+
+<br>
+1. UUID generator, can be generated for the results to uppercase or lowercase
+<br>
+2. Encrypt and decrypt URLs for the Query parameter values in the URL
+<br>
+3. Encode and decode the input string
+<br>
+4. Generate the password randomly according to the selected password length
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="141.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <projectConfigurable groupId="tools" displayName="TalkingData Smart Tool" id="com.talkingdata.smart.tool" instance="com.talkingdata.smart.tool.JiraConfigurable" />
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
